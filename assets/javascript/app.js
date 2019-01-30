@@ -1,15 +1,10 @@
 $(document).ready(function(){
 
     var timer = 120;
-    
     var correct = 0;
-
     var incorrect = 0;
-
     var isRunning = false;
-
     var questions = $("#questions")
-
     var triviaQuestions = {
 
         questions : [ "What is the capital of Croatia?", 
@@ -90,14 +85,10 @@ $(document).ready(function(){
     };
 
     function intializeGame() {
-
         timer = 0;
-        
         isRunning = false;
     };
-
     function createButton() {
-
         btnAttr = [
             {type: "button"},
             {class: "btn btn-secondary m-2"},
@@ -105,46 +96,24 @@ $(document).ready(function(){
             {"aria-pressed": false},
             {autocomplete: "off"}
         ];
-
         var newButton = $("<button>")
-
         for (i=0; i<0; i++) {
-
         newButton.attr(btnAttr[i])
-
         }
-
-
     }
-
     for (i=0; i<questions.length; i++) {
-
         var question = triviaQuestions.questions[i];
-
         var newQuestion = $("<div>")
-
         newQuestion.attr()
-
         newQuestion.text(question);
-
         questions.append(newQuestion);
-
         var newAnswers = $("<div>")
-
         for (i=0; i<ques[i].length; i++) {
-
             var button = createButton([i]);
-
             button.val([i]);
-
             newAnswers.append(button);
-
         };
-
         questions.append(newAnswers);
-
     };
-
     initializeGame();
-
 })
