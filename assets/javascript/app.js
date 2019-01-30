@@ -84,7 +84,7 @@ $(document).ready(function(){
         ]
     };
 
-    function intializeGame() {
+    function initializeGame() {
         timer = 0;
         isRunning = false;
     };
